@@ -1,0 +1,209 @@
+body{
+    margin: 0%;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* a{
+    background-color: blue;
+    color: aqua;
+} */
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* article{
+    height: 500px;
+    width: 500px;
+} */
+
+/* style for button */
+.button, button{
+    background-color: aqua; 
+    color: blue;
+    /* margin: 100px; */
+    margin: 50px;
+    /* padding: 20px; */
+    /* padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 40px; */
+    /* padding: 10px 20px 30px 40px; */
+    padding: 10px 20px;
+    border: solid 2px black;
+    /* border-radius: 5px; */
+    /* border-radius: 50%; */
+    border-radius: 10px;
+    /* Topography features are described using below 3 properties */
+    font-size: larger;
+    text-decoration: none; /*it removes underline for the text */
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;  /* it is needed for button element, not for .button */
+    transition: all 0.3s;
+}
+
+/* button{
+    background-color: aqua; 
+    color: blue;
+    margin: 50px;
+    padding: 10px 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    font-size: larger;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+} */
+
+/* Pseudo Class*/
+/* .button:hover{
+    background-color: beige;
+} */
+.button:hover, button:active{
+    background-color: beige;
+    color: black;
+}
+
+section{
+    height: 300px;
+    background-color: lightcyan;
+}
+
+.image{
+    width: 300px;
+    height: auto;
+    /* border-radius: 50%; */
+    border-radius: 20px;
+    float: right;
+}
+
+/* li{
+    display: inline;
+} */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 50px;
+    background-color: black;
+}
+
+.flex-container{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    border: solid 3px black;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-elements{
+    height: 50px;
+    /* width: 50px; */
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: solid 2px white;
+}
+
+footer{
+    height: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+aside{
+    float: left;
+    min-height: calc(100vh - 100px);
+    background-color: palegoldenrod;
+}
+
+section p{
+    font-family: cursive;
+}
+
+.flex-container .flex-elements:nth-child(4){
+    background-color: red;
+}
+
+.flex-container .flex-elements:first-child{
+    background-color: purple;
+}
+
+.flex-container .flex-elements:last-child{
+    background-color: green;
+}
+
+/* section hr + p {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* section hr ~ p {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+section > p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    /* transform: translate(50%,50%); */
+    /* transform: translate(500px, 500px); */
+    /* transform: translate(100px, 500px) rotate(40deg); */
+    /* transform: translate(100px, 500px) rotate(40deg) skew(20deg, 10deg); */
+    /* transform: translate(100px, 500px) skew(20deg, 10deg); */
+    /* transform: translate(100px, 500px) rotate(40deg) skew(20deg, 10deg) scale(1.5); */
+    animation-name: change-location;
+    animation-duration: 4s;
+    /* animation-iteration-count: 1; */
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes change-location {
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: red;
+        left: 200px;
+        top: 0px;
+    }
+    50%{
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75%{
+       background-color: pink;
+       left: 0px;
+       top: 200px; 
+    }
+    100%{
+        background-color: yellowgreen;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+
+
+
+
+

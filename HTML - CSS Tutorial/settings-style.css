@@ -1,0 +1,51 @@
+.box-container{
+    height: 400px;
+    width: 300px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+.box-container-1{
+    height: 400px;
+    width: 500px;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+.a, .b{
+    height: 100px;
+    width: 200px;
+    border: solid 2px black;
+    margin: 10px;
+}
+
+.a{
+    background-image: url('/images/tree.jpg');
+    background-size: 70px 50px;
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    /* background-position: 30px 50px; */
+    /* background-position: left bottom; */
+    background-position: right bottom;
+}
+
+.box-container:first-child{
+    background-color: red;
+    position: static;
+    position: relative;
+    top: 10%;
+    left: 30%;
+    position: absolute;
+    z-index: -2;
+    top: 10%;
+    left: 30%;
+}
+.box-container:nth-child(2){
+    background-color: blue;
+    position: fixed;
+    position: sticky;
+    top: 30%;
+    left: 70%;
+}
